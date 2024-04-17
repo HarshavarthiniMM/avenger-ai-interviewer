@@ -1,0 +1,23 @@
+<main>
+    <div class="upload-boxes">
+        <div class="upload-box">
+            <h2>Upload Job Description</h2>
+            <small>Accepted file types: PDF, Word, or text files</small>
+            <div class="upload-option">
+                <input type="file" id="jobdescription" name="upload-jobdescription" accept=".pdf, .doc, .docx, .txt" (change)="onFileSelected($event, 'jd')">
+            </div>
+        </div>
+        <div class="upload-box">
+            <h2>Upload Resume</h2>
+            <small>Accepted file types: PDF, Word, or text files</small>
+            <div class="upload-option">
+                <input type="file" id="resume" name="upload-resume" accept=".pdf, .doc, .docx, .txt" (change)="onFileSelected($event, 'resume')">
+            </div>
+        </div>
+    </div>
+    <button class="get-score" (click)="onSubmit()">GET SCORE</button>
+    <div *ngIf="loading" class="loading-circle">
+      <div class="spinner"></div>
+    </div>
+  </main>
+  

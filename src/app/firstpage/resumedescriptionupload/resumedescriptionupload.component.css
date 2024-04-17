@@ -1,0 +1,94 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.upload-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+.upload-box {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 4rem;
+    text-align: center;
+    padding: 4rem;
+    padding: 10% 10% 10% 10%;
+}
+
+.upload-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-top:2%;
+}
+
+.upload-icon {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.get-score {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 45%;
+}
+
+.get-score:hover {
+    background-color: #e0e0e0;
+  }
+
+  .loading-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Add background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  .spinner {
+    width: 50px; /* Customize size as needed */
+    height: 50px;
+    border: 4px solid #ccc; /* Customize colors as needed */
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  small{
+    margin: 10px;
+  }
+  

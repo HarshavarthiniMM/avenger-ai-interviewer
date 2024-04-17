@@ -1,0 +1,50 @@
+<div class="summary-container">
+  <h1>Summary of {{ matchingResults.matchingResults.candidate_name }} For {{ matchingResults.matchingResults.position_applied_for }}</h1>
+  
+  <div class="gauge-container">
+    <div class="gauge">
+      <ngx-gauge
+        [type]="'arch'"
+        [label]="'Overall Percentage'"
+        [min]="0"
+        [max]="100"
+        [thresholds]="thresholdConfig"
+        [cap]="'round'"
+        [thick]="10"
+        [append]="'%'"
+        [duration]="1500"
+        [value]="overallscore">
+      </ngx-gauge>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="summary-text-left">
+      <div class="text-area1">
+        <p><b>Resume Summary:</b></p>
+        <p>{{ matchingResults.matchingResults.Given_Resume_Summary }}</p>
+        <br />
+        <p><b>JD Summary:</b></p>
+        <p>{{ matchingResults.matchingResults.Given_Jd_Summary }}</p>
+      </div>
+    </div>
+    
+    <div class="summary-text-right">
+      <div class="text-area2">
+        <p><b>Candidate Name:</b> {{ matchingResults.matchingResults.candidate_name }}</p>
+        <p><b>Position Applied For:</b> {{ matchingResults.matchingResults.position_applied_for }}</p>
+        <p><b>Matching Score:</b> {{ matchingResults.matchingResults.matching_score }}</p>
+        <p><b>Matched Skills:</b> {{ matchingResults.matchingResults.matched_skills.join(', ') }}</p>
+        <p><b>Non-Matched Skills:</b> {{ matchingResults.matchingResults.non_matched_skills.join(', ') }}</p>
+        <p><b>Expertise Level:</b> {{ matchingResults.matchingResults.expertise_level }}</p>
+        <p><b>Overview:</b> {{ matchingResults.matchingResults.overview }}</p>
+        <p><b>Final Conclusion:</b> {{ matchingResults.matchingResults.final_conclusion }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button class="reject-button">Reject and Change Candidate</button>
+    <button class="continue-button" (click) = "toreponsecapture()">Continue with the candidate</button>
+  </div>
+</div>

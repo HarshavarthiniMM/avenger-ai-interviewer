@@ -1,0 +1,140 @@
+@media screen and (max-width: 768px) {
+  .gauge-container {
+      max-width: 300px; 
+  }
+}
+
+ngx-gauge {
+  width: 50%;
+  height: 50%; 
+  float: right;
+}
+
+.summary-container {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.summary-container h1 {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 3em;
+}
+
+.summary-text {
+  flex-basis: 47%;
+}
+
+.text-area {
+  width: 100%;
+  height: 25rem;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 2rem;
+}
+
+.ngx-gauge {
+  float: right;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reject-button,
+.continue-button {
+  padding: 1.5rem 2rem;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.reject-button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+}
+
+.continue-button {
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+}
+
+.continue-button:hover {
+  background-color: #e1ff00;
+}
+
+.reject-button:hover {
+  background-color: #a80909;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .content {
+    gap: 1em; 
+  }
+
+  .uploads {
+    flex-basis: 100%;
+    margin-bottom: 20px; 
+  }
+
+  .scores h2 {
+    margin-left: 0; 
+  }
+
+  .button-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .reject-button,
+  .continue-button {
+    width: 80%; 
+    margin-bottom: 1rem; 
+  }
+}
+
+.score-bar {
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+.score-progress {
+  height: 100%;
+  background: linear-gradient(to right, red, orange, green);
+  transition: width 0.3s ease;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-text-left, .summary-text-right {
+  flex: 1; 
+  padding: 10px; 
+}
+.text-area1, .text-area2 {
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  background-color: #f8f8f8; 
+  border-radius: 4px; 
+}

@@ -1,0 +1,18 @@
+<div class="gauge-container">
+    <div class="gauge">
+
+        <ngx-gauge
+            [type]="'arch'"
+            [label]="'Overall Percentage'"
+            [min]="0"
+            [max]="100"
+            [thresholds]="thresholdConfig"
+            [cap]="'round'"
+            [thick]="10"
+            [append]="'%'"
+            [duration]="1500"
+            [value]="overallscore"> <!--value should be dynamically changed from the backend -->
+        </ngx-gauge>
+
+    </div>
+</div>

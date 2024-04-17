@@ -1,0 +1,112 @@
+/* question-answer.component.css */
+.skeleton-loading {
+  width: 100%;
+  height: 20px; /* Adjust height according to your design */
+  background-color: gray; /* Light gray background */
+  animation: loading 1s infinite alternate; /* Apply animation */
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.topic-container{
+
+display: flex;
+flex-direction: row;
+gap: 20px;
+
+}
+
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightgray;
+  color: black;
+  cursor: pointer; /* Add cursor pointer for interactivity */
+}
+
+.item.active {
+  background-color: black;
+  color: white;
+}
+
+.question-box {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+/* 
+// .user-answer-editable{
+
+
+//   background-color:brown;
+// } */
+
+
+
+
+
+
+
+
+.QA-container {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.modelanswer-box {
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-answer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.audio-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.user-answer-editable {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+
+
+
+    .svg-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      fill: #000; /* Change the color as needed */
+    }
+
+
+
+
+
+    
