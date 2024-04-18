@@ -1,0 +1,26 @@
+.individualpercent {
+  display: flex;
+  flex-direction: column;
+  border: 1rem;
+  border-color: black;
+  background-color: #ccc;
+  padding: 3.5rem;
+  margin: auto;
+  border-radius: 2rem;
+  padding-bottom: 6rem;
+  padding-top: 4rem;
+}
+
+.custom-progress .ui-progressbar-value {
+    background-color: #007ad9; /* Change the background color of the progress bar */
+  }
+
+  .progress-container {
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    border-radius: 5px; 
+    width: 100%; 
+  }
+  
+
+  

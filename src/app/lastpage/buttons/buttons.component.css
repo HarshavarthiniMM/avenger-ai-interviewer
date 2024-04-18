@@ -1,0 +1,48 @@
+/* candidate-actions.component.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.select {
+    background-color: #00ff00; 
+    border: none;
+    color: #000;
+    padding: 1.4rem 3.4rem; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    cursor: pointer;
+    border-radius: 2rem;
+  }
+
+  .reject {
+    background-color: #ff0000; 
+    border: none;
+    color: #fff;
+    padding: 1rem 3rem; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem; 
+    margin: 1rem 13%; 
+    cursor: pointer;
+    border-radius: 2rem;
+  }
+  
+  .select:hover {
+    background-color: #e1ff00;
+  }
+
+  .reject:hover {
+    background-color: #a80909;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .button-container {
+      flex-direction: column; 
+    }
+  }
+  
+  

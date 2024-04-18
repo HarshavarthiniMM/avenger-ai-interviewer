@@ -1,0 +1,56 @@
+/* Style for the container of all-percentage component */
+
+.all-percentage-container {
+    display: flex;
+    flex-direction: column;
+    border: 1rem;
+    border-color: black;
+    background-color: #ccc;
+    padding: 2.4rem;
+    border-radius: 2rem;
+    margin-top: 0.75rem;
+
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .gauge-container {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .text-area-container {
+    margin-top: 20px; 
+  }
+  
+  .text-area {
+    width: 100%; 
+    height: 15rem; 
+    resize: none; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    border-radius: 1rem;
+  }
+
+  .container {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5%;
+  }
+  
+  .sidebar {
+    flex: 0 0 40%; /* Sidebar takes up 25% of the container width */
+    padding: 10px;
+  }
+  
+  .main-content {
+    flex: 1; /* Main content occupies remaining space */
+    padding: 20px;
+  }
+  
+  

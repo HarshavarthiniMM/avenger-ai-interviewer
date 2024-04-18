@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .gauge-container {
+        max-width: 300px; 
+    }
+}
+
+ngx-gauge {
+    width: 50%;
+    height: 50%; 
+}
